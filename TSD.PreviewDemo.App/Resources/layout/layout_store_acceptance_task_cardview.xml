@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ReSharper disable MarkupAttributeTypo -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    style="@style/YourCardView"
+    android:id="@+id/card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:divider="@drawable/empty_tall_divider"
+            android:showDividers="middle">
+
+          <TextView
+                android:id="@+id/layout_store_acceptance_task_cardview_order_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="5"
+                style="@style/TextJournalCarView"
+                android:text="Пусто"/>
+
+            <TextView
+                android:id="@+id/layout_store_acceptance_task_cardview_cargo_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="4.3"
+                style="@style/TextJournalCarView"
+                android:text="asfas kjefeslk fselsk jdsl fkjs"/>
+
+            <TextView
+              android:id="@+id/layout_store_acceptance_task_cardview_piece_by_piece"
+              android:layout_width="30dp"
+              android:layout_height="wrap_content"
+              android:textSize="16dp"
+              style="@style/TextJournalCarView"
+              android:text="Ш"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/layout_store_acceptance_task_cardview_type_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#777"
+                android:text="Пусто"
+                android:layout_weight="1"
+                style="@style/TextJournalCarView"/>
+
+            <TextView
+                android:id="@+id/layout_store_acceptance_task_cardview_ttn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#444"
+                android:text="Пусто"
+                android:layout_weight="0.9"
+                style="@style/TextJournalCarView"
+      />
+        </LinearLayout>
+
+      <TextView
+        android:id="@+id/layout_store_acceptance_task_cardview_ordinal_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

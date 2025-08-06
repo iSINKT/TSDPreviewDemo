@@ -1,0 +1,458 @@
+{
+  "Barcodes": [
+    {
+      "ID": "Сотрудник",
+      "Description": "Сотрудник",
+      "Priority": "-1000",
+      "BarcodeRules": [
+        {
+          "ID": "employee1",
+          "BarcodeStandard": "Code128",
+          "Type": "regexp",
+          "Value": "^300[\\W\\w\\s]{0,11}$"
+        },
+        {
+          "ID": "employee2",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^300[\\W\\w\\s]{0,11}$"
+        }
+      ]
+    },
+    {
+      "ID": "Продукт",
+      "Description": "Продукт",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "product1",
+          "BarcodeStandard": "EAN-13",
+          "Type": "regexp",
+          "Value": "^29\\d{11}$"
+        },
+        {
+          "ID": "product2",
+          "BarcodeStandard": "EAN-13",
+          "Type": "regexp",
+          "Value": "^\\d{13}$"
+        },
+        {
+          "ID": "product3",
+          "BarcodeStandard": "EAN-8",
+          "Type": "regexp",
+          "Value": "^\\d{8}$"
+        },
+        {
+          "ID": "product4",
+          "BarcodeStandard": "UPC-A",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        },
+        {
+          "ID": "employee4",
+          "BarcodeStandard": "UPC-E",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        }
+      ]
+    },
+    {
+      "ID": "Грузоместо",
+      "Description": "Грузоместо",
+      "Priority": "100",
+      "BarcodeRules": [
+        {
+          "ID": "rule302",
+          "BarcodeStandard": "Code128",
+          "Type": "regexp",
+          "Value": "^302[\\W\\w\\s]{0,11}$"
+        },
+        {
+          "ID": "rule302",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^302[\\W\\w\\s]{0,11}$"
+        }
+      ]
+    },
+    {
+      "ID": "Местоположение",
+      "Description": "Местоположение",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "place1",
+          "BarcodeStandard": "Code 39",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        },
+        {
+          "ID": "place1",
+          "BarcodeStandard": "CODE39",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        }
+      ]
+    },
+    {
+      "ID": "Ячейка",
+      "Description": "Ячейка",
+      "Priority": "100",
+      "BarcodeRules": [
+        {
+          "ID": "rule8",
+          "BarcodeStandard": "Code 39",
+          "Type": "regexp",
+          "Value": "^303[\\W\\w\\s]{0,20}$"
+        },
+        {
+          "ID": "rule8-1",
+          "BarcodeStandard": "CODE39",
+          "Type": "regexp",
+          "Value": "^303[\\W\\w\\s]{0,20}$"
+        },
+        {
+          "ID": "rule8-2",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^303[\\W\\w\\s]{0,20}$"
+        },
+        {
+          "ID": "rule8-3",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^303[\\W\\w\\s]{0,20}$"
+        }
+      ]
+    },
+    {
+      "ID": "Планограмма",
+      "Description": "Планограмма",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "rule301",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^301[\\W\\w\\s]{0,15}$"
+        },
+        {
+          "ID": "rule301-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^301[\\W\\w\\s]{0,15}$"
+        }
+      ]
+    },
+    {
+      "ID": "Адрес",
+      "Description": "Адрес в торговом зале или на складе",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "rule8.1",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^301[\\W\\w\\s]{0,15}$"
+        },
+        {
+          "ID": "rule8.1-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^301[\\W\\w\\s]{0,15}$"
+        },
+        {
+          "ID": "rule8.2",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^303[\\W\\w\\s]{0,20}$"
+        },
+        {
+          "ID": "rule8.2-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^303[\\W\\w\\s]{0,20}$"
+        }
+      ]
+    },
+    {
+      "ID": "Уценка",
+      "Description": "На стикер уценки",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "rule285",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^285[\\W\\w\\s]{0,9}$"
+        },
+        {
+          "ID": "rule285-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^285[\\W\\w\\s]{0,9}$"
+        },
+        {
+          "ID": "rule286",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^286[\\W\\w\\s]{0,9}$"
+        },
+        {
+          "ID": "rule286-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^286[\\W\\w\\s]{0,9}$"
+        }
+      ]
+    },
+    {
+      "ID": "Заказ",
+      "Description": "Номер заказа или перемещения",
+      "Priority": "-100",
+      "BarcodeRules": [
+        {
+          "ID": "rule128",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        },
+        {
+          "ID": "rule128-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        }
+      ]
+    },
+    {
+      "ID": "ЗаказПриёмка",
+      "Description": "ЗаказПриёмка",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "ruleЗK",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^ЗK[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "ruleЗK-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^ЗK[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "rule01БЗК",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^01БЗК[\\W\\w\\s]{0,9}$"
+        },
+        {
+          "ID": "rule01БЗК-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^01БЗК[\\W\\w\\s]{0,9}$"
+        },
+        {
+          "ID": "rule01ЗК",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^01ЗК[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "rule01ЗК-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^01ЗК[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "ruleНП",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^НП[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "ruleНП-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^НП[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "rule01БЗ",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^01БЗ[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "rule01БЗ-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^01БЗ[\\W\\w\\s]{0,8}$"
+        },
+        {
+          "ID": "rule_9",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^[\\W\\w\\s]{9}$"
+        },
+        {
+          "ID": "rule_9-1",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^[\\W\\w\\s]{9}$"
+        }
+      ]
+    },
+    {
+      "ID": "ГрузоместоПриёмка",
+      "Description": "ГрузоместоПриёмка",
+      "Priority": "100",
+      "BarcodeRules": [
+        {
+          "ID": "rule_12",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^[\\W\\w\\s]{12}$"
+        },
+        {
+          "ID": "rule_12",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^[\\W\\w\\s]{12}$"
+        },
+        {
+          "ID": "rule01G",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^01G[\\W\\w\\s]{9}$"
+        },
+        {
+          "ID": "rule01G_2",
+          "BarcodeStandard": "Code128",
+          "Type": "regexp",
+          "Value": "^01G[\\W\\w\\s]{9}$"
+        },
+        {
+          "ID": "ruleGM",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^GM[\\W\\w\\s]{12}$"
+        },
+        {
+          "ID": "ruleGM_1",
+          "BarcodeStandard": "Code128",
+          "Type": "regexp",
+          "Value": "^GM[\\W\\w\\s]{12}$"
+        }
+      ]
+    },
+    {
+      "ID": "КПП",
+      "Description": "КПП",
+      "Priority": "100",
+      "BarcodeRules": [
+        {
+          "ID": "rule241",
+          "BarcodeStandard": "EAN-13",
+          "Type": "regexp",
+          "Value": "^241\\d{10}$"
+        }
+      ]
+    },
+    {
+      "ID": "Ваучеры",
+      "Description": "Ваучеры",
+      "Priority": "100",
+      "BarcodeRules": [
+        {
+          "ID": "rule2401",
+          "BarcodeStandard": "EAN-13",
+          "Type": "regexp",
+          "Value": "^240[1-9]\\d{9}$"
+        }
+      ]
+    },
+    {
+      "ID": "АлкоМарка",
+      "Description": "Марка на алкогольной продукции",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "ruleAlco1",
+          "BarcodeStandard": "PDF-417",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        },
+        {
+          "ID": "ruleAlco2",
+          "BarcodeStandard": "DataMatrix",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        },
+        {
+          "ID": "ruleAlco13",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^303[\\W\\w\\s]{0,20}$"
+        },
+        {
+          "ID": "ruleAlco14",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        }
+      ]
+    },
+    {
+      "ID": "АлкоКороб",
+      "Description": "Короб товара",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "ruleBox1",
+          "BarcodeStandard": "GS1-128",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        },
+        {
+          "ID": "ruleBox2",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        },
+        {
+          "ID": "ruleBox3",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "[\\s\\S]"
+        }
+      ]
+    },
+    {
+      "ID": "Приборы",
+      "Description": "Приборы",
+      "Priority": "0",
+      "BarcodeRules": [
+        {
+          "ID": "rule1",
+          "BarcodeStandard": "GS1-128",
+          "Type": "regexp",
+          "Value": "^PS[\\w]{12}$"
+        },
+        {
+          "ID": "rule2",
+          "BarcodeStandard": "CODE128",
+          "Type": "regexp",
+          "Value": "^PS[\\w]{12}$"
+        },
+        {
+          "ID": "rule3",
+          "BarcodeStandard": "Code 128",
+          "Type": "regexp",
+          "Value": "^PS[\\w]{12}$"
+        }
+      ]
+    }
+  ]
+}

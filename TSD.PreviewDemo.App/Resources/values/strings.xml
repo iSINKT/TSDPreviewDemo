@@ -1,0 +1,87 @@
+<resources>
+  <string name="app_name">TSDPreview</string>
+  <string name="action_settings">Settings</string>
+  <string name="address_processed">Адрес обработан</string>
+  <string name="negative_qty">Итоговое количество товара не может быть отрицательным</string>
+  <string name="correct_cout_question">Вы уверены, что введенное количество корректно?</string>
+  <string name="qty_zero_warning">Итоговое количество товара не может быть отрицательным или нулевым</string>
+  <string name="record">Записано</string>
+  <string name="storage">Склад</string>
+  <string name="address_string">Адресная строка</string>
+  <string name="place">Место {0}</string>
+  <string name="not_release">Не реализовано</string>
+  <string name="empty_employee_field">Необходимо ввести данные сотрудника</string>
+  <string name="product_name_and_config">{0}\nКонфигурация: {1}</string>
+  <string name="cancel_button_text">Отмена</string>
+  <string name="ok_button_text">Ok</string>
+  <string name="accept_button_text">Подтвердить</string>
+  <string name="name_of_item_subtitle_text">Наименование</string>
+
+  <!--Dialog-->
+  <string name="dialog_error_tv_title">Ошибка</string>
+  <string name="dialog_tv_message">Текст сообщения.</string>
+  <string name="dialog_successful_tv_title">Готово!</string>
+  <string name="dialog_warning_tv_title">Внимание</string>
+
+
+  <!--Update activity-->
+  <string name="try_to_update_not_success">Попытка обновления не удалась - произошла ошибка:</string>
+  <string name="another_try_to_update">Повторная попытка обновления...</string>
+  <string name="checking_for_update">Проверка обновления...</string>
+  <string name="repeat_button_text">Повторить</string>
+  <string name="continue_button_text">Продолжить без обновления</string>
+
+  <!--Authorize activity-->
+  <string name="scan_the_barcode_of_badge">Для авторизации отсканируйте штрих-код личного бейджа</string>
+  <string name="employee_barcode">Штрих-код сотрудника</string>
+  <string name="authorization_server">Сервер авторизации</string>
+  <string name="enter_button_text">Вход</string>
+
+  <!--Main menu activity-->
+  <string name="main_menu_text">Главное меню</string>
+  <string name="logout_button_text">Выйти из учетной записи</string>
+  <string name="inventorization_menu_text">Инвентаризация</string>
+  <string name="items_moving_menu_text">Движение товара</string>
+  <string name="my_tasks_menu_text">Мои задания</string>
+  <string name="work_in_shopping_room_menu_text">Работа в торговом зале</string>
+  <string name="manufacture_menu_text">Производство</string>
+  <string name="pause_menu_text">Перерыв</string>
+
+  <!--Activity select shop-->
+  <string name="select_shop_and_storage_text">Выбор магазина и склада</string>
+  <string name="shop_subtitle_text">Магазин</string>
+  <string name="storage_subtitle_text">Склад</string>
+
+
+
+  <!--Activity Menu Movement Of Product-->
+  <string name="activity_menu_movement_of_product_tv_header">Движение товара</string>
+  <string name="activity_menu_movement_of_product_btn_acceptance">Приемка/Отгрузка</string>
+  <string name="activity_menu_movement_of_product_btn_return">Комплектация для возврата</string>
+  <string name="activity_menu_movement_of_product_btn_inside_transfer">Внутренний перенос</string>
+  <string name="activity_menu_movement_of_product_btn_set_of_cargo">Комплектация грузоместа</string>
+  <string name="activity_menu_movement_of_product_btn_check_cargo">Проверка грузоместа</string>
+  <string name="activity_menu_movement_of_product_btn_sales_materials">Материалы</string>
+
+  <!--Activity Store Acceptance New Tasks-->
+  <string name="activity_store_acceptance_new_tasks_tv_header">Новые задания</string>
+  <string name="activity_store_acceptance_new_tasks_tv_number">Номер ЗК/ПМ</string>
+  <string name="activity_store_acceptance_new_tasks_tv_cargo">Грузоместо</string>
+  <string name="activity_store_acceptance_new_tasks_tv_small_header_first_column">Номер ЗК/ГО</string>
+  <string name="activity_store_acceptance_new_tasks_tv_small_header_second_column">ТН/грузоместо</string>
+  <string name="activity_store_acceptance_new_tasks_btn_refresh">Обновить</string>
+
+  <!--Activity Store Acceptance Scanning Product-->
+  <string name="activity_store_acceptance_scan_product_tv_header">Сканирование товара</string>
+  <string name="activity_store_acceptance_scan_product_tv_barcode">ШК товара</string>
+  <string name="activity_store_acceptance_scan_product_tv_boxes">Короба</string>
+  <string name="activity_store_acceptance_scan_product_tv_item_per_box">Вложения</string>
+  <string name="activity_store_acceptance_scan_product_tv_all_qty">Итого</string>
+  <string name="activity_store_acceptance_scan_product_tv_fact_scanned">Заведено</string>
+  <string name="activity_store_acceptance_scan_product_tv_date">Дата производства</string>
+  <string name="activity_store_acceptance_scan_product_cb_accept">Принять</string>
+  <string name="activity_store_acceptance_scan_product_cb_refuse">Отказать</string>
+  <string name="activity_store_acceptance_scan_product_btn_input">Ввод</string>
+  <string name="activity_store_acceptance_scan_product_btn_close">Закрыть</string>
+  <string name="activity_store_acceptance_scan_product_btn_find">Поиск по марке</string>  
+</resources>

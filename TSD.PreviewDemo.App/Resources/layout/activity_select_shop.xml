@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ReSharper disable MarkupAttributeTypo -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginBottom="5dp">
+  <ImageView
+        android:id="@+id/activity_select_shop_iv_logo_red"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tsdpreviewlogo_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints"
+        android:layout_width="wrap_content"  />
+  <TextView
+        android:id="@+id/activity_select_shop_tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/select_shop_and_storage_text"
+        android:textColor="#000"
+        android:textFontWeight="500"
+        android:textSize="18dp"
+        app:fontFamily="Roboto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_select_shop_iv_logo_red" />
+    <TextView
+        android:id="@+id/activity_select_shop_tv_shop"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/shop_subtitle_text"
+        android:textColor="#5F5F5F"
+        android:textFontWeight="360"
+        android:textSize="12dp"
+        app:fontFamily="Roboto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_select_shop_iv_logo_red"
+        android:layout_width="match_parent" />
+  <Spinner
+        android:id="@+id/activity_select_shop_spinner_shop"
+        style="@style/CustomSpinnerBlackStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        android:dropDownWidth="301dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_select_shop_tv_shop" />
+  <TextView
+        android:id="@+id/activity_select_shop_tv_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/storage_subtitle_text"
+        android:textColor="#5F5F5F"
+        android:textFontWeight="360"
+        android:textSize="12dp"
+        app:fontFamily="Roboto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_select_shop_tv_shop" />
+  <Spinner
+        android:id="@+id/activity_select_shop_spinner_storage"
+        style="@style/CustomSpinnerBlackStyle"
+        android:layout_width="match_parent"
+        android:dropDownWidth="301dp"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_select_shop_tv_storage" />
+  <Button
+        style="@style/MyButtonRed"
+        android:id="@+id/activity_select_shop_btn_ok"
+        android:layout_width="match_parent"
+        android:text="ОК"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_select_shop_btn_exit"/>
+    <Button
+        style="@style/MyButtonInvisibleCancel"
+        android:id="@+id/activity_select_shop_btn_exit"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/activity_select_shop_lottie_animation_view"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        app:lottie_rawRes="@raw/load_spinner_red"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="true"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

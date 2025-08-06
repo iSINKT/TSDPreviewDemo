@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI" Version="14.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TSD.PreviewDemo.Common\TSD.PreviewDemo.Common.csproj" />
+    <ProjectReference Include="..\TSD.PreviewDemo.Core\TSD.PreviewDemo.Core.csproj" />
+  </ItemGroup>
+
+</Project>

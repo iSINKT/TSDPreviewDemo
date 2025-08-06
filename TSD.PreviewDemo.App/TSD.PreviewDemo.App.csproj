@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44ADC4B5-052C-48F7-9C4B-FDB1DE041C87}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{122416d6-6b49-4ee2-a1e8-b825f31c79fe}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TSD.PreviewDemo.App</RootNamespace>
+    <AssemblyName>TSD.PreviewDemo.App</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <LangVersion>latest</LangVersion>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidKeyStore>false</AndroidKeyStore>
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>latest</LangVersion>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\BaseActivity.cs" />
+    <Compile Include="Activities\Login\AuthorizeActivity.cs" />
+    <Compile Include="Activities\Login\ChangeStorageActivity.cs" />
+    <Compile Include="Activities\Login\SelectShopActivity.cs" />
+    <Compile Include="Activities\Menu\MainMenuActivity.cs" />
+    <Compile Include="Activities\Menu\MovementOfProductsMenuActivity.cs" />
+    <Compile Include="Activities\ScannerActivity.cs" />
+    <Compile Include="Activities\StoreAcceptance\StoreAcceptanceNewTasksActivity.cs" />
+    <Compile Include="Activities\StoreAcceptance\StoreAcceptanceProductScanActivity.cs" />
+    <Compile Include="Activities\Update\UpdateActivity.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="BackgroundServices\ScanReceiver.cs" />
+    <Compile Include="BackgroundServices\UploadLogsWorkManager.cs" />
+    <Compile Include="Container\BaseServicesModule.cs" />
+    <Compile Include="Container\CommonModule.cs" />
+    <Compile Include="Container\CoreServicesModule.cs" />
+    <Compile Include="Container\ViewModelsModule.cs" />
+    <Compile Include="Navigation\ActivityNavigator.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ActivityControlsMixin.cs" />
+    <Compile Include="Utilities\AndroidDeviceIdentityProvider.cs" />
+    <Compile Include="Utilities\ApplicationContextWrapper.cs" />
+    <Compile Include="Utilities\BusinessProcessStateAttribute.cs" />
+    <Compile Include="Utilities\CustomAdapter.cs" />
+    <Compile Include="Utilities\CustomEditText.cs" />
+    <Compile Include="Utilities\HideOnResourceAttribute.cs" />
+    <Compile Include="Utilities\MACAddrDeviceIdentityProvider.cs" />
+    <Compile Include="Utilities\ReflectionExtensions.cs" />
+    <Compile Include="Utilities\ViewControlsHelper.cs" />
+    <Compile Include="ViewData\ActivitySharedDataManager.cs" />
+    <Compile Include="ViewDialogs\ErrorDialog.cs" />
+    <Compile Include="ViewDialogs\OkSimpleDialog.cs" />
+    <Compile Include="ViewDialogs\SimpleWarningDialog.cs" />
+    <Compile Include="ViewDialogs\SuccessfulDialog.cs" />
+    <Compile Include="ViewDialogs\WarningDialog.cs" />
+    <Compile Include="ViewDialogs\YesNoQuestionDialog.cs" />
+    <Compile Include="ViewDialogs\YesNoSimpleDialog.cs" />
+    <Compile Include="ViewDialogs\YesNoSimpleWarningDialog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\raw\app_settings.json" />
+    <AndroidResource Include="Resources\raw\barcode_manifest.json" />
+    <AndroidResource Include="Resources\raw\cubes_loader.json" />
+    <AndroidResource Include="Resources\raw\load_spinner_red.json" />
+    <AndroidResource Include="Resources\raw\load_spinner_white.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="Autofac">
+      <Version>8.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Autofac.Extras.DynamicProxy">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Castle.Core">
+      <Version>4.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Castle.Core.AsyncInterceptor">
+      <Version>2.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Com.Airbnb.Android.Lottie">
+      <Version>3.0.6</Version>
+    </PackageReference>
+    <PackageReference Include="ReactiveUI">
+      <Version>14.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="ReactiveUI.AndroidSupport">
+      <Version>14.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="ReactiveUI.Events">
+      <Version>15.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.3.1.3" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>2.1.1.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4">
+      <Version>1.0.0.10</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
+      <Version>2.3.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Preference">
+      <Version>1.1.1.11</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Work.Runtime">
+      <Version>2.6.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.BlurView">
+      <Version>1.6.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TSD.PreviewDemo.Client\TSD.PreviewDemo.Client.csproj">
+      <Project>{E217BC43-D887-4100-861D-1178EA4FD832}</Project>
+      <Name>TSD.PreviewDemo.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TSD.PreviewDemo.Common\TSD.PreviewDemo.Common.csproj">
+      <Project>{DAE57F65-BA1B-48C7-829E-535E5BAAB6BB}</Project>
+      <Name>TSD.PreviewDemo.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TSD.PreviewDemo.Config\TSD.PreviewDemo.Config.csproj">
+      <Project>{7E9E7CC7-6B32-4DA1-B491-24829FC3A3CA}</Project>
+      <Name>TSD.PreviewDemo.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TSD.PreviewDemo.Core\TSD.PreviewDemo.Core.csproj">
+      <Project>{12B62078-94B7-4C01-BE07-13F911BB3A6A}</Project>
+      <Name>TSD.PreviewDemo.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TSD.PreviewDemo.DataLayer\TSD.PreviewDemo.DataLayer.csproj">
+      <Project>{CC006A63-3F1C-4A28-81F8-4F6C753C0C63}</Project>
+      <Name>TSD.PreviewDemo.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TSD.PreviewDemo.Logger\TSD.PreviewDemo.Logger.csproj">
+      <Project>{AB9E2D93-EAA3-4D94-81AC-915C2F55E4A8}</Project>
+      <Name>TSD.PreviewDemo.Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TSD.PreviewDemo.ViewModel\TSD.PreviewDemo.ViewModel.csproj">
+      <Project>{06C2B504-DE70-4C2F-A931-4207A0798B75}</Project>
+      <Name>TSD.PreviewDemo.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\anim\slide_left.xml" />
+    <AndroidResource Include="Resources\anim\slide_left_out.xml" />
+    <AndroidResource Include="Resources\anim\slide_right.xml" />
+    <AndroidResource Include="Resources\anim\slide_right_out.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_add_circle_black_18.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_add_circle_black_20.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_add_circle_black_24.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_add_circle_black_36.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_add_circle_black_48.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_arrow_back_black_18.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_arrow_back_black_20.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_arrow_back_black_24.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_arrow_back_black_36.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_arrow_back_black_48.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_remove_circle_black_18.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_remove_circle_black_20.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_remove_circle_black_36.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\baseline_remove_circle_black_48.png" />
+    <AndroidResource Include="Resources\drawable\additional_button_states.xml" />
+    <AndroidResource Include="Resources\drawable\baseline_arrow_back_18.xml" />
+    <AndroidResource Include="Resources\drawable\baseline_arrow_back_20.xml" />
+    <AndroidResource Include="Resources\drawable\baseline_arrow_back_24.xml" />
+    <AndroidResource Include="Resources\drawable\baseline_arrow_back_36.xml" />
+    <AndroidResource Include="Resources\drawable\baseline_arrow_back_black_24.png" />
+    <AndroidResource Include="Resources\drawable\baseline_remove_circle_24.xml" />
+    <AndroidResource Include="Resources\drawable\baseline_remove_circle_black_24.png" />
+    <AndroidResource Include="Resources\drawable\baseline_remove_circle_black_36.png" />
+    <AndroidResource Include="Resources\drawable\cardview_states.xml" />
+    <AndroidResource Include="Resources\drawable\edittext_background_black_bottom_border.xml" />
+    <AndroidResource Include="Resources\drawable\edittext_background_black_bottom_border_disabled.xml" />
+    <AndroidResource Include="Resources\drawable\edittext_background_black_bottom_border_enabled.xml" />
+    <AndroidResource Include="Resources\drawable\edittext_background_white_bottom_border.xml" />
+    <AndroidResource Include="Resources\drawable\edittext_blackborder_states.xml" />
+    <AndroidResource Include="Resources\drawable\empty_height_divider.xml" />
+    <AndroidResource Include="Resources\drawable\empty_tall_divider.xml" />
+    <AndroidResource Include="Resources\drawable\GreenCheckMark.png" />
+    <AndroidResource Include="Resources\drawable\ic_diff.xml" />
+    <AndroidResource Include="Resources\drawable\ic_green_check_mark.xml" />
+    <AndroidResource Include="Resources\drawable\ic_green_check_mark_message.xml" />
+    <AndroidResource Include="Resources\drawable\ic_icon_edit_barcode.xml" />
+    <AndroidResource Include="Resources\drawable\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\drawable\ic_orange_warning_message.xml" />
+    <AndroidResource Include="Resources\drawable\ic_red_cross.xml" />
+    <AndroidResource Include="Resources\drawable\ic_red_cross_message.xml" />
+    <AndroidResource Include="Resources\drawable\ic_right_arrow_btn_menu.xml" />
+    <AndroidResource Include="Resources\drawable\ic_sad_magnifier.xml" />
+    <AndroidResource Include="Resources\drawable\main_icon.png" />
+    <AndroidResource Include="Resources\drawable\menu_button_background_black_bottom_border.xml" />
+    <AndroidResource Include="Resources\drawable\RedCheckMark.png" />
+    <AndroidResource Include="Resources\drawable\red_button_shape.xml" />
+    <AndroidResource Include="Resources\drawable\red_button_states.xml" />
+    <AndroidResource Include="Resources\drawable\red_button_style_focus.xml" />
+    <AndroidResource Include="Resources\drawable\red_button_style_press.xml" />
+    <AndroidResource Include="Resources\drawable\shape_additional_button.xml" />
+    <AndroidResource Include="Resources\drawable\shape_button.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_background_black_bottom_border.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_background_white_bottom_border.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_black_dropdown_triangle.xml" />
+    <AndroidResource Include="Resources\drawable\spinner_white_dropdown_triangle.xml" />
+    <AndroidResource Include="Resources\drawable\splash_screen.png" />
+    <AndroidResource Include="Resources\drawable\style_additional_button_disable.xml" />
+    <AndroidResource Include="Resources\drawable\style_additional_button_focus.xml" />
+    <AndroidResource Include="Resources\drawable\style_additional_button_press.xml" />
+    <AndroidResource Include="Resources\drawable\style_cardview_enabled.xml" />
+    <AndroidResource Include="Resources\drawable\style_cardview_focussed.xml" />
+    <AndroidResource Include="Resources\drawable\white_button_shape.xml" />
+    <AndroidResource Include="Resources\drawable\white_button_states.xml" />
+    <AndroidResource Include="Resources\drawable\white_button_style_focus.xml" />
+    <AndroidResource Include="Resources\drawable\white_button_style_press.xml" />
+    <AndroidResource Include="Resources\layout\activity_login_authorize.xml" />
+    <AndroidResource Include="Resources\layout\activity_select_shop.xml" />
+    <AndroidResource Include="Resources\layout\activity_select_storage.xml" />
+    <AndroidResource Include="Resources\layout\activity_update.xml" />
+    <AndroidResource Include="Resources\layout\dialog_error_message.xml" />
+    <AndroidResource Include="Resources\layout\dialog_ok_simple_message.xml" />
+    <AndroidResource Include="Resources\layout\dialog_successful_message.xml" />
+    <AndroidResource Include="Resources\layout\dialog_warning_message.xml" />
+    <AndroidResource Include="Resources\layout\dialog_yes_no_question_dialog.xml" />
+    <AndroidResource Include="Resources\layout\dialog_yes_no_simple_dialog.xml" />
+    <AndroidResource Include="Resources\layout\dialog_yes_no_simple_warning.xml" />
+    <AndroidResource Include="Resources\layout\layout_store_acceptance_cardview_recalc.xml" />
+    <AndroidResource Include="Resources\layout\layout_store_acceptance_cargo_cardview.xml" />
+    <AndroidResource Include="Resources\layout\layout_store_acceptance_claim_list_cardview.xml" />
+    <AndroidResource Include="Resources\layout\layout_store_acceptance_diff_alco_cardview.xml" />
+    <AndroidResource Include="Resources\layout\layout_store_acceptance_diff_cardview.xml" />
+    <AndroidResource Include="Resources\layout\layout_store_acceptance_task_cardview.xml" />
+    <AndroidResource Include="Resources\layout\layout_store_acc_transfer_return_package_line_cardview.xml" />
+    <AndroidResource Include="Resources\layout\simple_spinner_dropdown_item.xml" />
+    <AndroidResource Include="Resources\layout\simple_spinner_dropdown_item_white.xml" />
+    <AndroidResource Include="Resources\layout\simple_spinner_dropdown_item_white_black_font.xml" />
+    <AndroidResource Include="Resources\layout\simple_spinner_item_black.xml" />
+    <AndroidResource Include="Resources\layout\simple_spinner_item_black_location.xml" />
+    <AndroidResource Include="Resources\layout\simple_spinner_item_black_prod_order.xml" />
+    <AndroidResource Include="Resources\layout\simple_spinner_item_white.xml" />
+    <AndroidResource Include="Resources\xml\file_paths.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\tsdpreviewlogo.xml" />
+    <AndroidResource Include="Resources\drawable\tsdpreviewlogo_color.xml" />
+    <AndroidResource Include="Resources\layout\activity_store_acceptance_new_tasks.xml" />
+    <AndroidResource Include="Resources\layout\activity_store_acceptance_scan_product.xml" />
+    <AndroidResource Include="Resources\layout\activity_main_menu.xml" />
+    <AndroidResource Include="Resources\layout\activity_menu_movement_of_product.xml" />
+    <AndroidResource Include="Resources\drawable\menu_button_button_states.xml" />
+    <AndroidResource Include="Resources\drawable\menu_button_button_states_disabled.xml" />
+    <AndroidResource Include="Resources\drawable\menu_button_button_states_enabled.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>

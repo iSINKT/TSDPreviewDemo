@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ReSharper disable MarkupAttributeTypo -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34463F">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activity_authorize_main-layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/activity_authorize_iv_logo_white"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/tsdpreviewlogo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/activity_authorize_tv_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="@string/scan_the_barcode_of_badge"
+                android:textColor="#fff"
+                android:textFontWeight="425"
+                android:textSize="18dp"
+                app:fontFamily="Roboto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_authorize_iv_logo_white" />
+            <TextView
+                android:id="@+id/activity_authorize_tv_barcode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/employee_barcode"
+                android:textColor="#fff"
+                android:textFontWeight="360"
+                android:textSize="12dp"
+                app:fontFamily="Roboto"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_authorize_tv_description" />
+            <TSD.PreviewDemo.App.Utilities.CustomEditText
+                android:id="@+id/activity_authorize_et_barcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EditTextMyStyleWhiteBorder"
+                android:singleLine="true"
+                android:inputType="number"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:imeOptions="actionNext"
+                app:layout_constraintTop_toBottomOf="@id/activity_authorize_tv_barcode"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_icon_edit_barcode"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/activity_authorize_et_barcode"
+                app:layout_constraintRight_toRightOf="@+id/activity_authorize_et_barcode" />
+            <TextView
+                android:id="@+id/activity_authorize_tv_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:text="@string/authorization_server"
+                android:textColor="#fff"
+                android:textFontWeight="360"
+                android:textSize="12dp"
+                app:fontFamily="Roboto"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/activity_authorize_tv_description" />
+            <Spinner
+                android:id="@+id/activity_authorize_spinner_server"
+                style="@style/CustomSpinnerWhiteStyle"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:spinnerMode="dialog"
+                android:dropDownWidth="301dp"
+                android:singleLine="true"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/activity_authorize_tv_server" />
+            <TextView
+                android:id="@+id/activity_authorize_tv_login_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="No network connection (Wi-Fi)"
+                android:textColor="#fff"
+                android:textFontWeight="360"
+                android:visibility="invisible"
+                android:textSize="14dp"
+                app:fontFamily="Roboto"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/version" />
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Version"
+                android:textColor="#fff"
+                android:textFontWeight="360"
+                android:textSize="14dp"
+                app:fontFamily="Roboto"
+                app:layout_constraintBottom_toTopOf="@id/activity_authorize_btn_entry" />
+            <Button
+                android:id="@+id/activity_authorize_btn_entry"
+                android:tag="HideControlWhenLostConnection"
+                android:text="@string/enter_button_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="5dp"
+                style="@style/MyButtonMainWhite" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/activity_authorize_blur_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/activity_authorize_lottie_animation_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:lottie_rawRes="@raw/load_spinner_white"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true" />
+    </eightbitlab.com.blurview.BlurView>
+</androidx.constraintlayout.widget.ConstraintLayout>

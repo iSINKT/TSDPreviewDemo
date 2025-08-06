@@ -1,0 +1,199 @@
+<resources>
+
+  <!-- ReSharper disable MarkupAttributeTypo -->
+  <!--Main Themes Styles Begin-->
+
+  <!-- Стиль двух активити которые запускаются первыми (update, authorize)-->
+  <style name="AppThemeLouncher">
+    <item name="android:windowBackground">@drawable/splash_screen</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowActionBar">true</item>
+  </style>
+
+  <!--Основной стиль активити внутри приложения-->
+  <style name="AppThemeWhiteToolbar" parent="Theme.MaterialComponents.Light">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="editTextStyle">@style/EditTextMyStyleBlackBorder</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="colorPrimary">#34463F</item>
+    <item name="colorAccent">#34463F</item>
+
+  </style>
+
+  <!--Main Themes Styles End-->
+
+
+
+  <!--Fonts Styles Begin-->
+
+  <style name="StyleOfAddressString">
+    <item name="android:textSize">12dp</item>
+    <item name="android:layout_height">30dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:text">"@string/address_string"</item>
+  </style>
+
+  <style name="HeaderStyle">
+    <item name="android:textColor">#000</item>
+    <item name="android:textFontWeight">500</item>
+    <item name="android:textSize">20dp</item>
+    <item name="android:fontFamily">"Roboto"</item>
+  </style>
+
+  <style name="SmallHeaderStyle">
+    <item name="android:textSize">14dp</item>
+    <item name="android:fontFamily">"Roboto"</item>
+  </style>
+
+  <!--Fonts Styles End-->
+
+
+  <!--Buttons Styles Begin-->
+
+  <style name="MyButtonRed" parent="@style/Widget.MaterialComponents.Button">
+    <item name="android:background">@drawable/red_button_states</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:layout_height">45dp</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textSize">12dp</item>
+  </style>
+
+  <style name="MyButtonMainWhite" parent="@style/MyButtonRed">
+    <item name="android:background">@drawable/white_button_states</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:layout_height">45dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textColor">#34463F</item>
+    <item name="android:textSize">12dp</item>
+  </style>
+
+  <style name="MyButtonInvisibleCancel">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
+  </style>
+
+  <style name="Additional.Button" parent="Theme.AppCompat">
+    <item name="android:layout_height">45dp</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:gravity">center</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:background">@drawable/additional_button_states</item>
+    <item name="android:textColor">#333333</item>
+    <item name="android:textSize">10dp</item>
+  </style>
+
+  <style name="DialogButton" parent="@style/Additional.Button">
+    <item name="android:textAllCaps">true</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:background">@drawable/additional_button_states</item>
+    <item name="android:textSize">15dp</item>
+  </style>
+
+  <style name="MainMenu.MenuButton" parent="@style/Widget.MaterialComponents.Button">    
+    <item name="android:background">@drawable/menu_button_button_states</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="fontFamily">Roboto</item>
+    <item name="android:textSize">19dp</item>
+    <item name="android:textColor">#333333</item>
+    <item name="android:paddingVertical">15dp</item>
+    <item name="android:paddingLeft">0dp</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textFontWeight">400</item>
+    <item name="android:gravity">left|center_vertical</item>
+    <item name="android:letterSpacing">0</item>
+    <item name="android:textAlignment">gravity</item>
+    <item name="android:stateListAnimator">@null</item>
+  </style>
+
+  <style name="MainMenu.MenuButton.ProdMenu" parent="@style/MainMenu.MenuButton">
+    <item name="android:paddingVertical">10dp</item>
+  </style>
+  <!--Buttons Styles End-->
+
+
+  <style name="EditTextMyStyleBlackBorder" parent="@android:style/Widget.Material.Light.EditText">
+    <!-- ReSharper disable once MarkupTextTypo -->
+    <item name="android:background">@drawable/edittext_blackborder_states</item>
+    <item name="android:textSize">18dp</item>
+    <item name="android:inputType">none</item>
+    <item name="android:focusableInTouchMode">true</item>
+    <item name="android:paddingVertical">5dp</item>
+    <item name="fontFamily">Roboto</item>
+    <item name="android:textColor">#000</item>
+  </style>
+
+  <style name="EditTextMyStyleWhiteBorder" parent="@style/EditTextMyStyleBlackBorder">
+    <item name="android:background">@drawable/edittext_background_white_bottom_border</item>
+    <item name="android:textSize">18dp</item>
+    <item name="fontFamily">Roboto</item>
+    <item name="android:textFontWeight">360</item>
+    <item name="android:textColor">#fff</item>
+  </style>
+
+
+  <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    <item name="android:textSize">20dp</item>
+  </style>
+
+
+  <style name="spinnerDropDownItemStyleWhite" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+    <item name="android:textColor">#fff</item>
+    <item name="android:textFontWeight">360</item>
+    <item name="android:textSize">16dp</item>
+  </style>
+
+
+  <style name="LayoutJournalCardview" parent="Theme.MaterialComponents.Light">
+    <item name="android:layout_height">35dp</item>
+    <item name="android:layout_width">35dp</item>
+  </style>
+
+  <style name="CardViewZoneStyle" parent="@android:style/Widget.Material.Light.EditText">
+    <item name="android:paddingVertical">10dp</item>
+    <item name="android:textSize">16dp</item>
+  </style>
+
+  <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem"/>
+
+
+  <style name="TextJournalCarView" parent="android:Widget.TextView.SpinnerItem">
+    <item name="fontFamily">Roboto</item>
+    <item name="android:textSize">18dp</item>
+    <item name="backgroundTint">#000</item>
+  </style>
+
+  <!--Local adjustment-->
+  <style name="TextSelectZoneCardView" parent="android:Widget.TextView.SpinnerItem">
+    <item name="fontFamily">Roboto</item>
+    <item name="android:textSize">18dp</item>
+  </style>
+
+  <style name="YourCardView" parent="Widget.MaterialComponents.CardView">
+    <item name="cardBackgroundColor">#fff</item>
+  </style>
+ 
+
+  <style name="CustomSpinner" parent="@android:style/Widget.Material.Light.Spinner.Underlined">
+  </style>
+
+
+
+  <!--Spinner Styles Begin-->
+
+  <style name="CustomSpinnerWhiteStyle" parent="@android:style/Widget.Material.Light.Spinner.Underlined">
+    <item name="android:background">@drawable/spinner_background_white_bottom_border</item>
+    <item name="android:paddingVertical">5dp</item>
+  </style>
+
+  <style name="CustomSpinnerBlackStyle" parent="@style/CustomSpinnerWhiteStyle">
+    <item name="android:background">@drawable/spinner_background_black_bottom_border</item>
+  </style>
+
+  <!--Spinner Styles End-->
+
+
+</resources>

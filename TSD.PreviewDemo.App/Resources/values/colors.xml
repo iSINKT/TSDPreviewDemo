@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#2c3e50</color>
+  <color name="colorPrimaryDark">#1B3147</color>
+  <color name="colorAccent">#3498db</color>
+  <color name="colorRed">#34463F</color>
+  <color name="GrayColorCardView">#f2f2f2</color>
+  <color name="GrayColorTextAdButton">#7D7D7D</color>
+  <color name="RedFocusColor">#ffb0b0</color>
+  <color name="RedPressedColor">#A37C7B</color>
+  <color name="SelectedCardColor">#d0d0d0</color>
+  <color name="SimpleWhite">#FFF</color>
+  <color name="DisabledCardTextColor">#DADADA</color>
+</resources>

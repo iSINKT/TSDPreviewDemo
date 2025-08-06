@@ -1,0 +1,53 @@
+{
+  "Serilog": {
+    "Using": [ "Serilog.Sinks.File" ],
+    "MinimumLevel": "Verbose",
+    "WriteTo": [
+      {
+        "Name": "File",
+        "Args": {
+          "path": "tsd.previewdemo.app.log",
+          "rollingInterval": "Day",
+          "retainedFileCountLimit": "7"
+        }
+      }
+    ]
+  },
+  "Application": {
+  
+    "Services": {
+      "WebRequestGlobalTimeout": 600,
+      "ServiceErrorPrefix": "SERVICE_ERROR_",
+      "ServiceList": [
+       {
+            "ServiceName": "Test",
+            "AxaptaAuthentication": "http://192.168.0.132:82/TSDAuthorizeService",
+            "AxaptaWeb": "http://192.168.0.132:82/",
+            "UpdateBundleService": {
+              "Uri": "http://192.168.0.132:84/",
+              "Time": "10"
+            }
+          },
+
+            {
+              "ServiceName": "Regress",
+              "AxaptaAuthentication": "http://192.168.0.132:81/TSDAuthorizeService",
+              "AxaptaWeb": "http://192.168.0.132:81/",
+              "UpdateBundleService": {
+                "Uri": "http://192.168.0.132:84/",
+                "Time": "10"
+              }
+            },
+            {
+              "ServiceName": "Prod",
+              "AxaptaAuthentication": "http://192.168.0.132:83/TSDAuthorizeService",
+              "AxaptaWeb": "http://192.168.0.132:83/",
+              "UpdateBundleService": {
+                "Uri": "http://192.168.0.132:84/",
+                "Time": "10"
+              }
+        }
+      ] 
+    } 
+  }
+}

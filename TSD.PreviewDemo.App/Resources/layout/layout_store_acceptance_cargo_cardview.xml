@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_height="wrap_content"
+  android:layout_width="match_parent"
+  style="@style/YourCardView"
+  android:id="@+id/card">
+
+  <TextView
+    android:id="@+id/layout_store_acceptance_cargo_cardview_tv_number"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:textSize="16dp"
+    android:gravity=""
+    style="@style/TextJournalCarView"
+    android:text="Пусто" />
+
+</com.google.android.material.card.MaterialCardView>
